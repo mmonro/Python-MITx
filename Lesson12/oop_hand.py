@@ -89,7 +89,7 @@ class Hand(object):
                 self.hand = tmp_hand
                 return False
         return True
-        raise NotImplementedError()
+
         
 
 myHand = Hand(7)
