@@ -48,7 +48,7 @@ def get_story_string():
     """
     Returns: a joke in encrypted text.
     """
-    f = open("story.txt", "r")
+    f = open("c:/users/Monte/6.00.1x Files/ps6/story.txt", "r")
     story = str(f.read())
     f.close()
     return story
@@ -260,3 +260,10 @@ print 'Actual Output:', plaintext.get_message_text_encrypted()
 ciphertext = CiphertextMessage('jgnnq')
 print 'Expected Output:', (24, 'hello')
 print 'Actual Output:', ciphertext.decrypt_message()
+
+
+def decrypt_story():
+    ciphertext = CiphertextMessage(get_story_string())
+    return ciphertext.decrypt_message()
+    
+print decrypt_story()
